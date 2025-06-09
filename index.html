@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set, viewport, and SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A collection of delicious recipes for every occasion.">
     <meta name="keywords" content="recipes, cooking, food, cuisine">
     <title>The Recipe</title>
+    <!-- Link to external CSS and JS files -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Header section with site title and navigation -->
     <header role="banner">
         <h1>The Recipe</h1>
         <hr>
+        <!-- Main navigation menu -->
         <nav role="navigation" aria-label="Main Navigation">
             <ul>
                 <li>
@@ -30,23 +34,29 @@
             </ul>
         </nav>
     </header>
+    <!-- Main content area -->
     <main role="main">
+        <!-- Article containing all recipe content -->
         <article role="article" aria-labelledby="intro-heading">
+            <!-- Section for background music -->
             <section aria-labelledby="music-heading">
                 <h2 id="music-heading">Enjoy the Music</h2>
                 <p>Listen to the classic "That's Amore" by Dean Martin while you cook!</p>
                 <audio src="audio/Dean Martin - That's Amore.mp3" controls loop aria-label="That's Amore by Dean Martin"></audio>
                 <br>
             </section>
+            <!-- Introduction section with image and quote -->
             <section aria-labelledby="intro-heading">
                 <h2 id="intro-heading">Introduction</h2>
                 <p>
                     Welcome to our recipe for the classic Spaghetti Bolognese! This dish is a staple in many households and is loved for its rich flavors and comforting nature. Whether you're cooking for family or friends, this recipe is sure to impress.
                 </p>
                 <figure>
+                    <!-- Recipe image -->
                     <img src="https://img.taste.com.au/VFkGwzXU/w720-h480-cfill-q80/taste/2016/11/spaghetti-bolognese-106560-1.jpeg" alt="spaghetti bolognese on a plate" width="300" height="200">
                     <figcaption hidden>Spaghetti Bolognese</figcaption>
                 </figure>
+                <!-- Blockquote with a description and citation -->
                 <blockquote>
                     <p>
                         <em>Can you think of a dish more iconic, adored, or heart-warming than a spaghetti bolognese?
@@ -62,6 +72,7 @@
                     </cite>
                 </blockquote>
             </section>
+            <!-- Ingredients list -->
             <section aria-labelledby="ingredients">
                 <h2 id="ingredients">Ingredients</h2>
                 <ul>
@@ -82,6 +93,7 @@
                     <li>Parmesan cheese, to serve</li>
                 </ul>
             </section>
+            <!-- Step-by-step instructions -->
             <section aria-labelledby="instructions">
                 <h2 id="instructions">Instructions</h2>
                 <ol>
@@ -94,6 +106,7 @@
                     <li>Divide spaghetti among serving bowls. Spoon over the sauce. Top with basil and sprinkle with parmesan.</li>
                 </ol>
             </section>
+            <!-- Nutritional information table -->
             <section aria-labelledby="nutrition">
                 <h2 id="nutrition">Nutritional Facts</h2>
                 <table role="table" aria-label="Nutritional Information">
@@ -137,11 +150,13 @@
                 </table>
             </section>
             <hr>
+            <!-- Recipe rating form -->
             <section aria-labelledby="rating">
                 <h2 id="rating">Rate This Recipe</h2>
                 <form action="" method="post" role="form" aria-labelledby="rating">
                     <fieldset>
                         <legend>Rating 1-5</legend>
+                        <!-- Radio buttons for rating -->
                         <label for="rating-1">1</label>
                         <input type="radio" name="rating" id="rating-1" value="1" required>
                         <label for="rating-2">2</label>
@@ -155,6 +170,7 @@
                     </fieldset>
                     <fieldset>
                         <legend>Personal Info</legend>
+                        <!-- User information fields -->
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
                         <br>
@@ -178,6 +194,7 @@
             </section>
         </article>
     </main>
+    <!-- Footer section -->
     <footer role="contentinfo">
         <p>&copy; 2025 The Recipe. All rights reserved.</p>
     </footer>
